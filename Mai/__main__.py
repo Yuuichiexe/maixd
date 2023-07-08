@@ -1,13 +1,14 @@
 import asyncio
 import importlib
 import sys
+import app
 
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from Mai import LOGGER, userbot
+from Mai import LOGGER, app, userbot
 from Mai.core.call import Eren
 from Mai.plugins import ALL_MODULES
 from Mai.utils.database import get_banned_users, get_gbanned
